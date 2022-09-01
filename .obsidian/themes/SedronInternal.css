@@ -1,0 +1,125 @@
+/* Kris Keillor
+ * Sedron Technologies Internal Stylesheet
+ * v0.1.0 2022-08-25
+ */
+
+/* 
+ * Globals
+ */
+:root {
+  --Pantone7737:#6ba539 ;
+}
+hr { break-after:page; visibility: hidden; }
+
+/* 
+ * PREVIEW 
+ */
+
+/* Headers */ 
+h1, .cm-header-1, .markdown-preview-view h1 {
+  margin-top: 28pt;
+	margin-bottom: 0pt;
+  font-size: 10pt;
+  font-weight: bold;
+  /*font: 10pt "Industry", sans-serif;*/
+  color: var(--Pantone7737);
+  letter-spacing: 0.25em;
+}
+
+h2, .cm-header-2, .markdown-preview-view h2 {
+  margin-top: 4pt;
+  /*font: 24pt "Industry-Book", sans-serif;*/
+  letter-spacing: 0.05em;
+}
+
+h3, .cm-header-3, .markdown-preview-view h3 {
+  margin-top: 16pt;
+  /*font: 12pt "Industry-Bold", sans-serif;*/
+  letter-spacing: 0.05em;
+}
+
+/* Text */ 
+p {
+  /*margin-top: 18pt;
+  font: 10pt "DIN2014-Light", sans-serif;
+  letter-spacing: 0.1em;*/
+}
+
+blockquote {
+  /*margin-top: 18pt;
+  font: 14pt "DIN2014-Italic", sans-serif;*/
+  color: var(--Pantone7737);
+  /*letter-spacing: 0.10em;*/
+}
+
+/* Images */
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* 
+ * PAGES 
+ */
+@page {
+  page-size: letter;
+}
+
+/* 
+ * PRINT 
+ */
+@media print {
+  hr { break-after:page; visibility: hidden; }
+  
+  /* Headers */ 
+  h1, .cm-header-1, .markdown-preview-view h1 {
+    margin-top: 28pt;
+	margin-bottom: 0pt;
+    font-size: 10pt;
+    font-weight: bold;
+    /*font: 10pt "Industry-Bold", sans-serif;*/
+    color: var(--Pantone7737);
+    text-transform: uppercase;
+    letter-spacing: 0.25em;
+  }
+  
+  h2, .cm-header-2, .markdown-preview-view h2 {
+    margin-top: 4pt;
+    /*font: 24pt "Industry-Book", sans-serif;*/
+    letter-spacing: 0.05em;
+  }
+  
+  h3, .cm-header-3, .markdown-preview-view h3 {
+    margin-top: 16pt;
+    /*font: 12pt "Industry-Bold", sans-serif;*/
+    letter-spacing: 0.05em;
+  }
+  
+  /* Text */ 
+  p {
+    /*margin-top: 18pt;
+    font: 10pt "DIN2014-Light", sans-serif;
+    letter-spacing: 0em;*/
+  }
+  
+  blockquote {
+    /*margin-top: 18pt;
+    font: 14pt "DIN2014-Italic", sans-serif;*/
+    color: var(--Pantone7737);
+    /*letter-spacing: 0.1em;*/
+  }
+  
+  /* Images */
+  img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .footer {
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+  }
+}
